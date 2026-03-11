@@ -48,6 +48,13 @@
             text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
         }
 
+        /* Section headings */
+        h2 {
+            margin-top: 30px;
+            color: #93c5fd;
+            text-align: center;
+        }
+
         /* Responsive container */
         .container {
             max-width: 600px;
@@ -65,13 +72,17 @@
             font-size: 1.1rem;
         }
 
-        input, select {
+        input, select, textarea {
             width: 100%;
             padding: 12px;
             margin-top: 6px;
             border-radius: 6px;
             border: none;
             font-size: 1rem;
+        }
+
+        textarea {
+            min-height: 120px;
         }
 
         button {
@@ -90,6 +101,16 @@
         button:hover {
             background: #7dd3fc;
         }
+
+        /* Payment button styling */
+        .pay-button {
+            background: #22c55e;
+            margin-top: 15px;
+        }
+
+        .pay-button:hover {
+            background: #4ade80;
+        }
     </style>
 </head>
 
@@ -97,6 +118,22 @@
     <h1>Course Registration</h1>
 
     <div class="container">
+
+        <!-- COURSE DETAILS SECTION -->
+        <h2>Course Details</h2>
+        <textarea placeholder="Write all the course details here... 
+For example:
+• Course name
+• What students will learn
+• Schedule
+• Duration
+• Price
+• Requirements
+• Teacher info
+• Anything else you want"></textarea>
+
+        <!-- REGISTRATION FORM -->
+        <h2>Sign Up</h2>
         <form>
             <label>Full Name</label>
             <input type="text" placeholder="Enter your full name" required>
@@ -124,6 +161,10 @@
 
             <button type="submit">Submit Registration</button>
         </form>
+
+        <!-- PAYMENT BUTTON (placeholder for Stripe) -->
+        <button class="pay-button">Proceed to Payment</button>
+
     </div>
 </body>
 </html>
