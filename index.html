@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Course Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        /* Global styles */
+        * {
+            box-sizing: border-box;
+            font-family: "Times New Roman", serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(
+                135deg,
+                #0f172a 0%,
+                #1e3a8a 50%,
+                #0f172a 100%
+            );
+            color: #e5e7eb;
+            min-height: 100vh;
+            background-size: cover;
+        }
+
+        /* Subtle language-themed background pattern */
+        body::before {
+            content: "こんにちは  Hello  Hola  Bonjour  مرحبا  Привет  你好";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10vw;
+            opacity: 0.05;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        /* Centered heading */
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 2rem;
+            color: #38bdf8;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Responsive container */
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        /* Example button */
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 8px;
+            color: #0f172a;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #7dd3fc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Course Registration</h1>
+
+    <div class="container">
+        <p>Welcome! This site is designed to help you register for language courses easily.</p>
+
+        <button>Get Started</button>
+    </div>
+</body>
+</html>
