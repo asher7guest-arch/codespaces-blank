@@ -59,11 +59,25 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
         }
 
-        /* Example button */
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: none;
+            font-size: 1rem;
+        }
+
         button {
             width: 100%;
             padding: 14px;
-            margin-top: 20px;
+            margin-top: 25px;
             background: #38bdf8;
             border: none;
             border-radius: 8px;
@@ -83,9 +97,33 @@
     <h1>Course Registration</h1>
 
     <div class="container">
-        <p>Welcome! This site is designed to help you register for language courses easily.</p>
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
 
-        <button>Get Started</button>
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age" required>
+
+            <label>Nationality</label>
+            <input type="text" placeholder="Where are you from?" required>
+
+            <label>Language You Want to Learn</label>
+            <select required>
+                <option value="">Select a language</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>German</option>
+                <option>Japanese</option>
+                <option>Chinese</option>
+                <option>Arabic</option>
+                <option>Russian</option>
+            </select>
+
+            <button type="submit">Submit Registration</button>
+        </form>
     </div>
 </body>
 </html>
